@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		606DEDF51D65B33C00DA4914 /* NewsReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsReader-Prefix.pch"; sourceTree = "<group>"; };
 		60C4EE451D6582F600AB9ACB /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C4EE491D6582F600AB9ACB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60C4EE4B1D6582F600AB9ACB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		606DEDF41D65B31000DA4914 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				60C4EE831D65851E00AB9ACB /* Defines.h */,
+			);
+			name = Define;
+			sourceTree = "<group>";
+		};
 		60C4EE3C1D6582F600AB9ACB = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +120,10 @@
 				60C4EE801D65846100AB9ACB /* DB */,
 				60C4EE811D65847B00AB9ACB /* Utillity */,
 				60C4EE821D65848900AB9ACB /* ThirdSDK */,
-				60C4EE831D65851E00AB9ACB /* Defines.h */,
 				60C4EE4B1D6582F600AB9ACB /* AppDelegate.h */,
 				60C4EE4C1D6582F600AB9ACB /* AppDelegate.m */,
 				60C4EE841D65856600AB9ACB /* Resources */,
+				606DEDF41D65B31000DA4914 /* Define */,
 				60C4EE591D6582F600AB9ACB /* Info.plist */,
 				60C4EE481D6582F600AB9ACB /* Supporting Files */,
 			);
@@ -125,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				60C4EE491D6582F600AB9ACB /* main.m */,
+				606DEDF51D65B33C00DA4914 /* NewsReader-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -531,7 +541,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "/Users/Amoyb1oo/Desktop/git/NewsReader/NewsReader/NewsReader-Prefix.pch";
 				INFOPLIST_FILE = NewsReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Amoyb1oo.NewsReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -542,7 +555,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "/Users/Amoyb1oo/Desktop/git/NewsReader/NewsReader/NewsReader-Prefix.pch";
 				INFOPLIST_FILE = NewsReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Amoyb1oo.NewsReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -614,6 +630,7 @@
 				60C4EE741D6582F700AB9ACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60C4EE751D6582F700AB9ACB /* Build configuration list for PBXNativeTarget "NewsReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -622,6 +639,7 @@
 				60C4EE771D6582F700AB9ACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60C4EE781D6582F700AB9ACB /* Build configuration list for PBXNativeTarget "NewsReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -630,6 +648,7 @@
 				60C4EE7A1D6582F700AB9ACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

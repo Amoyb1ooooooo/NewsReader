@@ -16,7 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self testDevicesSize];
+    
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)testDevicesSize{
+    if (IsiPhone5) {
+        NSLog(@"%f,%f",[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
+    }else if (IsiPhone6){
+        NSLog(@"%f,%f",[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
